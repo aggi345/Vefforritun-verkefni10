@@ -19,6 +19,10 @@ const URL = 'https://api.nasa.gov/planetary/apod';
 export default async function getRandomImage() {
   const DATE = randomDate();
   const response = await fetch(`${URL}?api_key=${API_KEY}&date=${DATE}`);
-  const data = await response.json();
-  return data;
+  if (response.status !== 200) {
+    throw new Error('Villa kom upp');
+  } else {
+    const data = await response.json();
+    return data;
+  }
 }

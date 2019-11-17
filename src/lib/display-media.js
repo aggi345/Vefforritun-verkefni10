@@ -30,7 +30,7 @@ function getNewImage() {
     title.textContent = response.title;
     text.textContent = response.explanation;
   }).catch((error) => {
-    console.error('Villa kom upp');
+    console.error(error);
   });
 }
 
