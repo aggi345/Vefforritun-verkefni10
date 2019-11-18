@@ -7,7 +7,7 @@ let title; // titill fyrir mynd á forsíðu
 let text; // texti fyrir mynd á forsíðu
 let img; // mynd á forsíðu
 
-let iframe; //video spilari
+let iframe; // video spilari
 
 let image; // object sem inniheldur núverandi mynd á forsíðu.
 
@@ -38,7 +38,6 @@ function getNewImage() {
  * Vistar núverandi mynd í storage.
  */
 function saveCurrentImage() {
-  console.log(image);
   save(image.media_type, image.url, image.explanation, image.title);
 }
 

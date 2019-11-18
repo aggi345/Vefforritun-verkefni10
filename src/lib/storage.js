@@ -35,7 +35,6 @@ export function save(type, mediaUrl, text, title) {
     title,
   };
   items.push(content);
-  console.log(items);
   localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(items));
 }
 
