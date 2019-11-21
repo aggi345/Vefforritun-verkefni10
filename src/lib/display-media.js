@@ -68,7 +68,7 @@ export function loadFavourites() {
   const items = load();
   const main = document.querySelector('.apod');
 
-  for (let item of items) {/* eslint-disable-line */
+  for (const item of items) {/* eslint-disable-line */
     const titleElement = document.createElement('h2');
     titleElement.setAttribute('class', 'apod__title');
     titleElement.textContent = item.title;
