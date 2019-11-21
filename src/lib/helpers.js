@@ -28,7 +28,6 @@ export function el(name, ...children) {
       }
     });
   }
-
   return element;
 }
 
@@ -39,6 +38,9 @@ export function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+/**
+* Skilar dagsetningu af handahófi á bilinu [16.06.1995, Dagurinn í dag]
+*/
 export function randomDate() {
   const start = new Date(1995, 5, 16);
   const end = new Date();

@@ -38,7 +38,6 @@ export function save(type, mediaUrl, text, title) {
   localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(items));
 }
 
-
 /**
  * Hreinsar allar myndir úr localStorage
  */
